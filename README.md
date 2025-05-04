@@ -1,7 +1,7 @@
 # 🎓 College Management System – SQL Data Project
 
 ## 📌 Introduction
-This project is a **relational SQL-based database** that models the academic ecosystem of a university or college. It supports **student management, faculty allocation, course scheduling**, and **strategic academic analytics**, simulating a real-world academic system like Syracuse University.
+This project is a **relational SQL-based database** that models the academic ecosystem of a university or college. It supports **student management, faculty allocation, course scheduling**, and **strategic academic analytics**, simulating a real-world academic system.
 
 ---
 
