@@ -106,6 +106,18 @@ An end-to-end MySQL project that simulates a full-fledged **college management s
 
 ---
 
+## 📂 SQL Query Analytics
+
+This project also includes a detailed SQL script: `college_analytics_queries.sql` which answers 20 important academic and operational questions. It helps analyze:
+
+- 🎓 Student behavior and risk
+- 👨‍🏫 Professor allocation
+- 📅 Course and schedule optimization
+- 🧠 Strategic campus planning
+
+> 💾 Run the queries inside MySQL Workbench or phpMyAdmin after setting up the `college_mang_sys` database.
+
+
 ## 📂 Project Structure
 
 college_admin/
