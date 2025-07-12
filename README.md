@@ -109,14 +109,12 @@ An end-to-end MySQL project that simulates a full-fledged **college management s
 ## 📂 Project Structure
 
 college_admin/
-│
+
 ├── db.php                 # DB connection file
 
 ├── index.php              # Admin login
 
 ├── dashboard.php          # Dashboard after login
-
-│
 
 ├── student.php            # View all students
 
@@ -126,8 +124,6 @@ college_admin/
 
 ├── delete_student.php     # Delete student
 
-│
-
 ├── course.php             # View all courses
 
 ├── add_course.php         # Add new course
@@ -135,8 +131,6 @@ college_admin/
 ├── edit_course.php        # Edit course info
 
 ├── delete_course.php      # Delete course
-
-│
 
 ├── enrollment.php         # View/manage enrollments
 
