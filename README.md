@@ -108,13 +108,80 @@ An end-to-end MySQL project that simulates a full-fledged **college management s
 
 ## 📂 Project Structure
 
-```plaintext
-college_mang_sys/
+college_admin/
 │
-├── create_tables.sql             # SQL for table creation
-├── insert_data.sql               # Insert statements for dummy data
-├── course_completion.sql         # Data for course completion analysis
-├── analysis_queries.sql          # Advanced analytical SQL queries
-├── ER_diagram.png                # Entity Relationship Diagram
-├── screenshots/                  # Optional query result images
-└── README.md                     # Project documentation
+├── db.php                 # DB connection file
+├── index.php              # Admin login
+├── dashboard.php          # Dashboard after login
+│
+├── student.php            # View all students
+├── add_student.php        # Add new student
+├── edit_student.php       # Edit student info
+├── delete_student.php     # Delete student
+│
+├── course.php             # View all courses
+├── add_course.php         # Add new course
+├── edit_course.php        # Edit course info
+├── delete_course.php      # Delete course
+│
+├── enrollment.php         # View/manage enrollments
+├── logout.php             # Admin logout
+└── college_mang_sys.sql   # SQL dump file for DB setup
+
+
+## 🖥️ Local Setup Instructions (Windows - XAMPP)
+
+### ✅ Step 1: Install Prerequisites
+
+- 📦 [Download XAMPP](https://www.apachefriends.org/index.html)
+- 💻 [Optional: Download MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
+
+---
+
+### ✅ Step 2: Clone or Download Project
+
+- Place the project folder inside XAMPP’s `htdocs` directory:
+
+```bash
+C:\xampp\htdocs\college_admin
+
+### ✅ Step 3: Start XAMPP
+Open XAMPP Control Panel and start the following:
+
+🟢 Apache
+
+🟢 MySQL
+
+### ✅ Step 4: Create Database
+Option A: Using phpMyAdmin
+Open your browser and go to: http://localhost/phpmyadmin
+
+Click on New and create a database named:
+college_mang_sys
+
+Click Import tab
+
+Upload the college_mang_sys.sql file provided in this project
+
+Click Go to finish import
+
+
+
+-- Paste the content from college_mang_sys.sql here
+### ✅ Step 5: Configure Database Connection
+Open the file db.php and make sure the connection matches your MySQL settings:
+
+<?php
+$conn = new mysqli("localhost", "root", "", "college_mang_sys");
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+?>
+⚠️ Note: The default MySQL username in XAMPP is root with no password.
+
+### ✅ Step 6: Run the Project
+In your browser, visit:
+
+http://localhost/college_admin/
+You’ll see the login screen or dashboard.
+
