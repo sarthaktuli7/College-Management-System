@@ -111,21 +111,37 @@ An end-to-end MySQL project that simulates a full-fledged **college management s
 college_admin/
 │
 ├── db.php                 # DB connection file
+
 ├── index.php              # Admin login
+
 ├── dashboard.php          # Dashboard after login
+
 │
+
 ├── student.php            # View all students
+
 ├── add_student.php        # Add new student
+
 ├── edit_student.php       # Edit student info
+
 ├── delete_student.php     # Delete student
+
 │
+
 ├── course.php             # View all courses
+
 ├── add_course.php         # Add new course
+
 ├── edit_course.php        # Edit course info
+
 ├── delete_course.php      # Delete course
+
 │
+
 ├── enrollment.php         # View/manage enrollments
+
 ├── logout.php             # Admin logout
+
 └── college_mang_sys.sql   # SQL dump file for DB setup
 
 
